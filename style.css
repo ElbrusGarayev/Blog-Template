@@ -30,16 +30,16 @@ body{
 	content: '';
 	right: 0;
 	top: 0;
-	border-top: 3px solid #fff;
-	border-right: 3px solid #fff;
+	border-top: 3px solid #96e6a1;
+	border-right: 3px solid #96e6a1;
 	transform: translate(-100%, 50%);
 }
 .nav a:after {
 	content: '';
 	left: 0;
 	bottom: 0;
-	border-bottom: 3px solid #fff;
-	border-left: 3px solid #fff;
+	border-bottom: 3px solid #96e6a1;
+	border-left: 3px solid #96e6a1;
 	transform: translate(100%, -50%)
 }
 .nav a:hover:before,
@@ -49,7 +49,8 @@ body{
 }
 
 .nav a:hover {
-	background-color: #005bea;;
+	background-color: #fff;
+	color: #96e6a1;
 	border-radius: 10px;
 }
 /*Navbar*/
@@ -61,6 +62,7 @@ header img{
 }
 #title{
 	padding-top: 12%;
+	font-family: 'Titillium Web';
 }
 #img{
 	width: 30%;
@@ -80,12 +82,12 @@ header img{
 	bottom: 100%;
 	left: 15px;
 	right: 15px;
-	background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
+	background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
 	overflow: hidden;
 	height: 0;
 	transition: 1s;
 	border-radius: 21px;
-	opacity: 0.8;
+	opacity: 0.5;
 }
 .title {
 	color: black;
@@ -104,25 +106,28 @@ header img{
 	height: 100%;
 }
 .bg-dark{
-	background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+	background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
 }
+
 /*Header*/
 /*Body*/
+.round{
+	border-radius: 30px;
+}
 .title-a{
 	font-size: 50px;
 	text-shadow: 3px 3px 4px gray;
 }
 .progress {
-	background: rgba(255,255,345,0.1);
+	background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 	border-radius: 100px;
-	padding: 0 5px;
 	height: 20px;
 	text-align: center;
 }
 .progress-value9 {
 	animation: load 3s normal forwards;
 	border-radius: 100px;
-	background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+	background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
 }
 
 @keyframes load {
@@ -133,7 +138,7 @@ header img{
 .progress-value8 {
 	animation: loade 3s normal forwards;
 	border-radius: 100px;
-	background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+	background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
 }
 
 @keyframes loade {
@@ -143,7 +148,7 @@ header img{
 .progress-value7 {
 	animation: loads 3s normal forwards;
 	border-radius: 100px;
-	background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+	background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
 }
 
 @keyframes loads {
@@ -154,7 +159,7 @@ header img{
 .progress-value5 {
 	animation: loadf 3s normal forwards;
 	border-radius: 100px;
-	background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+	background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
 }
 
 @keyframes loadf {
@@ -195,10 +200,9 @@ header img{
 	justify-content: space-around;
 }
 .serv-info:hover{
-	background-color: #6BBBFF;
-	margin: 5px 5px 5px 5px;
+	background-color: #d4fc79;
+	margin: -10px 1px 3px 0px;
 }
-
 .port-row{
 	margin-top: 20px;
 	display: flex;
@@ -209,6 +213,9 @@ header img{
 	border-radius: 20px;
 	padding: 25px;
 	transition: all 0.8s;
+}
+.port-col a{
+	color: #666;
 }
 .port-title{
 	font-size: 30px;
@@ -226,8 +233,9 @@ header img{
 }
 
 .port-col:hover {
-	background-color: #6BBBFF;
-	margin: 5px 5px 5px 5px;
+	background-color: #d4fc79;
+	margin: -10px 1px 3px 0px;
+	text-decoration-color: #fff;
 }
 .title-c{
 	text-align: left;
@@ -235,12 +243,12 @@ header img{
 .line{
 	width: 100px;
 	height: 5px;
-	background-color: #0078ff;
+	background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
 }
 .line-cen{
 	width: 100px;
 	height:6px;
-	background-color: #0078ff;
+	background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
 	margin: 0 auto;
 }
 
@@ -258,23 +266,27 @@ header img{
 	width: 100%;
 	font-size: 20px;
 	padding: 10px 15px;
-	border: 1px solid #ced4da;
-transition: 0.4s;
+	border: 1px solid #96e6a1;
+	transition: 0.4s;
 }
 
 .con-msg:focus {
-  box-shadow: 0 0 15px rgba(81, 203, 238, 1);
+  box-shadow: 0 0 15px #d4fc79;
   margin: -10px 1px 3px 0px;
+  outline: none;
 }
 .con-sub{
+	background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
 	border-radius: 5rem;
-	padding: .9rem 2.3rem;
+	padding: 0.9rem 2.3rem;
 	font-size: 20px;
 	transition: 0.55s;
+	border: 0px;
 }
 .con-sub:hover{
-	box-shadow: 0 0 25px rgba(81, 203, 238, 1);
+	box-shadow: 0 0 25px #96e6a1;
 	margin: -15px 1px 3px 0px;
+	outline: none;
 }
 .contact ul {
 	width: 100%;
@@ -295,7 +307,7 @@ transition: 0.4s;
 	line-height: 60px;
 	border-radius: 50%;
 	font-size: 35px;
-	color: #007BFF;
+	color: #d4fc79;
 	transition: 0.5s;
 }
 .contact ul li a:hover::before {
@@ -303,9 +315,16 @@ transition: 0.4s;
 	box-shadow: 0 0 5px;
 }
 .contact ul li a:hover {
-	color: #fff;
-	box-shadow: 0 0 5px blue;
-	text-shadow: 0 0 5px #007BFF;
+	color: #d4fc79;
+	box-shadow: 0 0 5px green;
+	text-shadow: 0 0 5px #d4fc79;
 	margin: -10px 1px 3px 0px;
+}
+.contact span{
+	color: #d4fc79;
+	font-size: 25px;
+}
+.footer{
+	color: #666;
 }
 /*Body*/
